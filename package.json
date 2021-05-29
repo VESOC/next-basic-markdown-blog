@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "cache-posts": "node scripts/cache.js",
+    "prepare": "husky install",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
@@ -17,6 +19,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
+    "husky": "^6.0.0",
     "postcss": "^8.3.0",
     "tailwindcss": "^2.1.2"
   }
