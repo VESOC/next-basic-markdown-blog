@@ -11,7 +11,9 @@ export default function CategoryBlogPage({ posts, categoryName, categories }) {
     <Layout>
       <div className='flex justify-between'>
         <div className='w-3/4 mr-10'>
-          <h1 className='text-5xl border-b-4 p-5'>Posts for {categoryName}</h1>
+          <h1 className='text-5xl border-b-4 p-5'>
+            Posts for {categoryName.toUpperCase()}
+          </h1>
           <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
             {posts.map((post, index) => (
               <Post key={index} post={post} />
